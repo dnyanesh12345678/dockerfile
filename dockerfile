@@ -1,5 +1,6 @@
 FROM ubuntu
 RUN apt-get update
+RUN apt-get install vim -y
 RUN apt-get install curl -y
 RUN curl -O https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.75/bin/apache-tomcat-8.5.75.tar.gz
 RUN tar -zxvf apache-tomcat-8.5.75.tar.gz
